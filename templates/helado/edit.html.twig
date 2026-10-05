@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Helado{% endblock %}
+
+{% block body %}
+    <h1>Edit Helado</h1>
+
+    {{ include('helado/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_helado_index') }}">back to list</a>
+
+    {{ include('helado/_delete_form.html.twig') }}
+{% endblock %}

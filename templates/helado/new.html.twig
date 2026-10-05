@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Helado{% endblock %}
+
+{% block body %}
+    <h1>Create new Helado</h1>
+
+    {{ include('helado/_form.html.twig') }}
+
+    <a href="{{ path('app_helado_index') }}">back to list</a>
+{% endblock %}

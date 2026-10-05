@@ -1,0 +1,20 @@
+<head>
+    <meta charset="utf-8" />
+    <title>Panel</title>
+    <meta name="description" content="Panel principal de Portal Sol">
+    <link href="{{ asset('css/intro.css') }}" rel="stylesheet" />
+</head>
+<body>
+    <section id="main-page">
+        <header>
+            <img class="logo" src="https://www.udla.edu.ec/assets/logo_new.svg" alt="logo udla">
+        </header>
+
+        <main>
+            <h1>Bienvenido</h1>
+            <p>Sesión iniciada como: {{ app.user.userIdentifier }}</p>
+            <ul>
+                <li><a href="{{ path('app_helado_index') }}">Gestionar helados</a></li>
+            </ul>
+            <a href="{{ path('app_logout') }}">Cerrar sesión</a>
+        </main>

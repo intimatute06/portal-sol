@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Helado{% endblock %}
+
+{% block body %}
+    <h1>Helado</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ helado.id }}</td>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <td>{{ helado.nombre }}</td>
+            </tr>
+            <tr>
+                <th>Precio</th>
+                <td>{{ helado.precio }}</td>
+            </tr>
+            <tr>
+                <th>Stock</th>
+                <td>{{ helado.stock }}</td>
+            </tr>
+            <tr>
+                <th>Descripcion</th>
+                <td>{{ helado.descripcion }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_helado_index') }}">back to list</a>
+
+    <a href="{{ path('app_helado_edit', {'id': helado.id}) }}">edit</a>
+
+    {{ include('helado/_delete_form.html.twig') }}
+{% endblock %}
