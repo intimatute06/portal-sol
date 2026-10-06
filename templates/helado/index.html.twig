@@ -1,9 +1,9 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Helado index{% endblock %}
+{% block title %}Helados Disponibles {% endblock %}
 
 {% block body %}
-    <h1>Helado index</h1>
+    <h1>Helados Disponibles </h1>
 
     <table class="table">
         <thead>
@@ -13,7 +13,7 @@
                 <th>Precio</th>
                 <th>Stock</th>
                 <th>Descripcion</th>
-                <th>actions</th>
+                <th>Acciones</th>
             </tr>
         </thead>
         <tbody>
@@ -25,8 +25,8 @@
                 <td>{{ helado.stock }}</td>
                 <td>{{ helado.descripcion }}</td>
                 <td>
-                    <a href="{{ path('app_helado_show', {'id': helado.id}) }}">show</a>
-                    <a href="{{ path('app_helado_edit', {'id': helado.id}) }}">edit</a>
+                    <a href="{{ path('app_helado_show', {'id': helado.id}) }}">Mostrar</a>
+                    <a href="{{ path('app_helado_edit', {'id': helado.id}) }}">Editar</a>
                 </td>
             </tr>
         {% else %}
@@ -37,5 +37,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('app_helado_new') }}">Create new</a>
+    <a href="{{ path('app_helado_new') }}">Crear Nuevo Helado</a>
 {% endblock %}
