@@ -37,13 +37,13 @@
 El proyecto fue desarrollado para la materia de **Ingeniería Web** (UDLA) con dos objetivos:
 
 1. Aplicar el patrón **Modelo–Vista–Controlador (MVC)** y las operaciones **CRUD**.
-2. Implementar un sistema de **autenticación** en el que las URLs protegidas no sean accesibles sin iniciar sesión y las contraseñas se guarden **encriptadas**.
+2. Implementar un sistema de **autenticación** en el que las URLs protegidas no sean accesibles sin iniciar sesión y las contraseñas se guarden encriptadas.
 
 ---
 
 ## Estado del proyecto
 
-**Completado** — cumple todos los requisitos de la tarea *Desarrollo de la aplicación (CRUD y Login con MVC)*.
+**Completado** — cumple todos los requisitos de la tarea  Desarrollo de la aplicación CRUD Y LOGIN MVC.
 
 ---
 
@@ -104,7 +104,7 @@ Navegador → Ruta → Controlador → Modelo (Doctrine ↔ MySQL) → Vista (Tw
 | Medida | Implementación |
 |---|---|
 | **Autenticación** | Firewall de Symfony con `form_login` (`config/packages/security.yaml`) |
-| **Encriptación de contraseñas** | **bcrypt** (`password_hashers: auto`). Más seguro que md5: es lento a propósito y usa sal aleatoria |
+| **Encriptación de contraseñas** | **bcrypt** (`password_hashers: auto`). Más seguro que md5. |
 | **Protección de URLs** | `access_control`: `^/panel` requiere `ROLE_USER` |
 | **Protección CSRF** | Token en el formulario de login y en la eliminación de helados |
 | **Datos sensibles** | La conexión a la base de datos va en `.env.local`, excluido de Git |
