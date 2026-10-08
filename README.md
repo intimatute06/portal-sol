@@ -68,7 +68,7 @@ El proyecto fue desarrollado para la materia de **Ingeniería Web** (UDLA) con d
 
 ### Video de demostración
 
-[Ver el video de demostración](https://youtu.be/Zj0jcPkyB34)
+[Ver el video de demostración](https://youtu.be/e_382RwI_m0)
 
 En el video se muestra:
 1. El funcionamiento del login (correcto e incorrecto).
